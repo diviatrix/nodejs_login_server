@@ -1,0 +1,51 @@
+{
+    "hostname": "localhost",
+    "email": "",
+    "password": "",
+    "port": 7331,
+    "loggerLevel": ["info", "error","warning", "debug"],
+    "db": {
+      "databaseURL": "",
+      "serviceAccount": {
+      },
+      "firebaseConfig": {
+      },
+      "path":{
+        "app_stats": "/app/stats/",
+        "account_register": "/registration",
+        "account_experience": "/experience",
+        "account_level": "/level",
+        "account_balance": "/balance",
+        "account_admin": "/admin",
+        "db_users": "/users/"
+      }
+    },
+    "api" : { "name":"Village", "version": "2024-08-25", "format": "JSON" },
+    "routes": [
+      { "url": "/api", "method": "GET", "description": "Basic information about the API" },
+      { "url": "/api/login", "method":"POST","description": "Login with email and password" },
+      { "url": "/api/register", "method": "POST", "description": "Register with email, password, display name and avatar URL, all strings" },
+      { "url": "/api/user", "method": "GET", "description": "Get user information by uuid" }
+    ],
+    "consoleStrings": [
+      {"id": "bold", "open": "\u001b[1m", "close": "\u001b[22m"},
+      {"id": "red", "open": "\u001b[31m", "close": "\u001b[39m"},
+      {"id": "green", "open": "\u001b[32m", "close": "\u001b[39m"},
+      {"id": "yellow", "open": "\u001b[33m", "close": "\u001b[39m"}
+    ],
+    "path": {
+      "public": "./app/public/"
+    },    
+    "rarity": [
+      {"id": "normal", "color": "#808080", "text": "", "weight": 0.5},
+      {"id": "rare", "color": "#008000", "text": "", "weight": 0.15},
+      {"id": "epic", "color": "#800080", "text": "", "weight": 0.05},
+      {"id": "legendary", "color": "#FFD700", "text": "", "weight": 0.01},
+      {"id": "hero", "color": "#FFA500", "text": "", "weight": 0.01},
+      {"id": "absolute", "color": "#0000FF", "text": "", "weight": 0.05},
+      {"id": "meme", "color": "#FF0000", "text": "", "weight": 0.10}
+    ],
+    "locale": {
+      "cmd_start": "Используй /go для регистрации в системе 1337.plus"
+    }
+  }

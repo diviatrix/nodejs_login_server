@@ -1,0 +1,22 @@
+{
+  "name": "village_server_account",
+  "version": "0.0.1",
+  "description": "Login server for village game",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Warning: no test specified\" && exit 1"
+  },
+  "author": "https://1337.plus",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2",
+    "firebase": "^10.13.0",
+    "firebase-admin": "^12.4.0",
+    "firebase-auth": "^0.1.2",
+    "http": "^0.0.1-security",
+    "nodemon": "^3.1.4",
+    "uuid": "^10.0.0"
+  }
+}
