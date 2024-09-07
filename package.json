@@ -4,7 +4,7 @@
   "description": "Login server for village game",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon app.js",
+    "start": "node app.js",
     "test": "echo \"Warning: no test specified\" && exit 1"
   },
   "author": "https://1337.plus",
