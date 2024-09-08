@@ -1,0 +1,143 @@
+{
+	"info": {
+		"_postman_id": "c8247937-c1d4-4554-a819-1f6185704821",
+		"name": "1337",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30710814",
+		"_collection_link": "https://village-2550.postman.co/workspace/Village~78b35b0d-d9e7-4781-8173-dcdf974843b2/collection/30710814-c8247937-c1d4-4554-a819-1f6185704821?action=share&source=collection_link&creator=30710814"
+	},
+	"item": [
+		{
+			"name": "http://localhost:7331/api",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7331/api",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7331",
+					"path": [
+						"api"
+					]
+				},
+				"description": "api\r\n"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:7331/api/register",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"login\": \"test\",\r\n  \"password\": \"B75FA5604C64C6119D06F247EA4E5020\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7331/api/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7331",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:7331/api/user/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7331/api/user/diviatrix",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7331",
+					"path": [
+						"api",
+						"user",
+						"diviatrix"
+					]
+				},
+				"description": "user"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:7331/api/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"login\": \"admin\",\r\n    \"password\": \"B75FA5604C64C6119D06F247EA4E5020\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7331/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7331",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:7331/api/user/save",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"login\": \"diviatrix\",\r\n    \"password\": \"B75FA5604C64C6119D06F247EA4E5020\",\r\n    \"displayName\": \"AYaka\",\r\n    \"photoURL\": \"https://1337.plus/share/logo_2.png\",\r\n    \"playerData\": {\r\n        \"exp\": 0,\r\n        \"level\": 1\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7331/api/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7331",
+					"path": [
+						"api",
+						"save"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
